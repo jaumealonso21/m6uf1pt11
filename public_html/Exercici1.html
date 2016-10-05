@@ -24,9 +24,12 @@ window.onload = function() {
  document.getElementById("resp03").innerHTML = "Nombre d'enllaços que apunten a http://prueba " + contador;
 	// Nombre d'enllaços del tercer paràgraf
 var para = document.getElementsByTagName('p');
-para[2] = document.getElementsByTagName('a');
-//var paraEn = para;
- document.getElementById("resp04").innerHTML = "Nombre d'enllaços del tercer paràgraf " + para[2][1];
+var intermig = para[2];//El tercer paràgraf
+var continu = 
+//var continu = intermig.innerHTML.getElementsByTagName('a');
+//intermig = document.getElementsByTagName('a');
+
+ document.getElementById("resp04").innerHTML = "Nombre d'enllaços del tercer paràgraf " + intermig.innerHTML;
 };
 </script>
 </head>
