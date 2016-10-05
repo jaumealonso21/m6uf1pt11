@@ -23,13 +23,9 @@ window.onload = function() {
  }
  document.getElementById("resp03").innerHTML = "Nombre d'enllaços que apunten a http://prueba " + contador;
 	// Nombre d'enllaços del tercer paràgraf
-var para = document.getElementsByTagName('p');
-var intermig = para[2];//El tercer paràgraf
-var continu = 
-//var continu = intermig.innerHTML.getElementsByTagName('a');
-//intermig = document.getElementsByTagName('a');
+ var para = document.getElementsByTagName('p')[2].getElementsByTagName('a');//El num 2 és el tercer paràgraf
 
- document.getElementById("resp04").innerHTML = "Nombre d'enllaços del tercer paràgraf " + intermig.innerHTML;
+ document.getElementById("resp04").innerHTML = "Nombre d'enllaços del tercer paràgraf " + para.length;
 };
 </script>
 </head>
